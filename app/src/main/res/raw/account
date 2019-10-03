@@ -1,0 +1,11 @@
+{
+  "account": [
+    {
+      "username": "jun",
+      "password": "123",
+      "notification": "true",
+      "priceRange": "0-30",
+      "clothesCategory": "jacket"
+    }
+  ]
+}

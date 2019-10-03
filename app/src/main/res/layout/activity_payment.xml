@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".PaymentActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Card Type"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <RadioGroup
+        android:id="@+id/rgp_payment_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rad_debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:checked="true"
+            android:text="Debit" />
+
+        <RadioButton
+            android:id="@+id/rad_visa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visa" />
+
+        <RadioButton
+            android:id="@+id/rad_mastercard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MasterCard" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Card Number:"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <EditText
+        android:id="@+id/edt_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="16"
+        android:hint="Enter Card Number"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txt_expiry_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Select Expiry Date"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <TextView
+        android:id="@+id/txt_cvc_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="CVC - Code:"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <EditText
+        android:id="@+id/edt_cvc_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="3"
+        android:hint="Enter CVC - Code"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/chk_remember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remember Information" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_payment"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/btn_rounded"
+            android:text="Complete Payment" />
+
+        <Button
+            android:id="@+id/btn_launch"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_rounded"
+            android:text="Go back" />
+
+    </LinearLayout>
+
+</LinearLayout>

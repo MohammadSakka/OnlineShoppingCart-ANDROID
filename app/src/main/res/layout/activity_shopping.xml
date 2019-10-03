@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".ShoppingActivity"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Shop"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold|italic" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:color="#000000"
+            tools:context=".ShoppingActivity">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_range"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_rounded"
+            android:text="Set category and price" />
+
+        <Spinner
+            android:id="@+id/spn_price_range"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:entries="@array/price" />
+
+        <Spinner
+            android:id="@+id/spn_clothes_category"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/category" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_show_items"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_rounded"
+            android:text="Show selected items" />
+
+        <Button
+            android:id="@+id/btn_launch"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded"
+            android:text="Go to summary" />
+
+    </LinearLayout>
+</LinearLayout>

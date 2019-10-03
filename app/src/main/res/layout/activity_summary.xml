@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".SummaryActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold|italic" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Shipping Option(Normal shipping = $10, Express = $20)" />
+
+    <RadioGroup
+        android:id="@+id/rgp_shipping_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rad_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:checked="true"
+            android:text="Normal" />
+
+        <RadioButton
+            android:id="@+id/rad_express"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Express" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="133dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="45dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="90dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textAppearance="@android:style/TextAppearance.Large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_rounded"
+            android:text="Calculate Total" />
+
+        <Button
+            android:id="@+id/btn_launch"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_rounded"
+            android:text="Confirm summary" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded"
+            android:text="Make changes" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
