@@ -19,8 +19,8 @@
 
 -	Back button would launch back to Login activity
 
+<img src="https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture2.png" height="450" width="250">
 
-[[https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture2.png]]
 
 
 ***
@@ -35,8 +35,8 @@
 
 -	Click on go to summary button to launch Summary activity.
 
+<img src="https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture3.png" height="450" width="250">
 
-[[https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture3.png]]
 
 
 ***
@@ -52,8 +52,8 @@
 -	Click on confirm button to launch Payment activity.
 
 
+<img src="https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture4.png" height="450" width="250">
 
-[[https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture4.png]]
 
 
 ***
@@ -68,8 +68,8 @@
 
 -	Click on complete payment button to launch Confirmation Activity and click on go back button to go back to Summary Activity 
 
+<img src="https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture5.png" height="450" width="250">
 
-[[https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture5.png]]
 
 
 ***
@@ -82,8 +82,8 @@
 
 Shopping activity, Summary activity, Payment Activity and Confirmation activity would all have a menu, which includes logout, where clicking on logout would launch Login activity. 
 
+<img src="https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture6.png" height="450" width="250">
 
-[[https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture6.png]]
 
 
 
