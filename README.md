@@ -7,7 +7,7 @@
 
 -	If you want to create new account, click on create button to launch Create account activity
 
-<img src="https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture1.png" height="300">
+<img src="https://github.com/jykelly2/OnlineShoppingCart/blob/master/Picture1.png" height="600" width="400">
 
 
 ***
